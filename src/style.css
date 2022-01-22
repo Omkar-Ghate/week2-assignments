@@ -55,6 +55,16 @@ li:hover {
     border-radius: 0.3rem;
 }
 
+/* Home page main  */
+main {
+    max-width: 60rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    background: var(--card-btn-color);
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
 /* Cards */
 .cards {
     display: flex;
