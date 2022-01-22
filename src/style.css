@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --card-bg-color: #f0e9e0;
+    --card-btn-color: #e4c8a2;
+    --badge-color: #554f3c;
+}
+
+/* Navigation bar */
+nav {
+    background-color: var(--card-bg-color);
+    padding: 0.3rem;
+    max-width: 50rem;
+    height: 4rem;
+    margin: 1rem auto;
+    border-radius: 0.3rem;
+}
+
+ul {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+}
+
+a {
+    color: var(--badge-color);
+    font-size: 1.2rem; 
+    margin: auto;
+}
+
+li:hover {
+    background-color: var(--card-btn-color);
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--card-btn-color);
+    border-radius: 0.3rem;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card-basic{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 24rem;
+    width: 22rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--card-bg-color);
+    margin: 1rem;
+}
+
+.card-basic-media img{
+    border-radius: 0.3rem 0.3rem 0 0;
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.card-content{
+    display: flex;
+    height: 40%;
+    justify-content: space-around;
+    flex-flow: column;
+    padding: 0.5rem 0.8rem;
+    background-color: var(--lightest-bg-color);
+    position: relative;
+}
+
+.card-basic-title {
+    letter-spacing: 0.1rem
+}
+
+.card-actionbar{
+    display: flex;
+    height: 10%;
+    padding:0.3rem;
+    margin: 0.5rem;
+}
+
+.card-content-view{
+    display: flex;
+    flex-grow: 3;
+    justify-content: space-evenly;
+}
+
+.card-basic-desc{
+    padding: 0.5rem 0rem;
+}
+
+.card-content-view > button{
+    border:none;
+    font-weight: 700;
+    padding: 0.3rem 0.3rem;
+    letter-spacing: 0.1rem;
+    justify-content: center;
+    background: transparent;
+}
+
+.card-content-action{
+    display: flex;
+    flex-grow: 3;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.card-content-view > button:hover{
+    background-color: #baab96;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.card-actionbar {
+    padding: 0.2rem;
+}
+
+/* card-basic-w/text over media */
+
+.card-basic-tom{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 22rem;
+    width: 22rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--card-bg-color);
+    margin: 1rem;
+}
+
+.card-basic-tom-title {
+    position: absolute;
+    left: 0.25rem;
+    top: -5rem;
+    padding: 0.5rem 0.8rem;
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+/* card-with-header */
+
+.card-header-title, .card-header-desc {
+    padding: 0.5rem 0.8rem;
+}
+
+.card-header-media img{
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+/* Badges */
+
+/* Text with badge */
+
+.badges {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.text-w-badge {
+    position: relative;
+}
+
+.badge-medium-content {
+    color: white;
+}
+
+.badge-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    top: -1rem;
+    right: -1rem;
+    background-color: var(--badge-color);
+}
+
+.badge-large-content {
+    color: white;
+}
+
+.btn-primary {
+    width: 6rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--badge-color);
+    /* position: relative; */
+    color: var(--card-bg-color);
+    font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+}
+
+.btn-w-left-badge {
+    position: relative;
+}
+
+.badge-medium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    top: -0.8rem;
+    right: -0.8rem;
+    background-color: var(--card-btn-color);
+}
+
+.badge-medium.left {
+    left: -1rem;
+}
+
+.badge-medium-content {
+    color: var(--badge-color);
+}
+
+/* Icon with a badge */
+.icon-w-badge {
+    position: relative;
+}
+
+.icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+
