@@ -233,9 +233,9 @@ i:hover {
     border: none;
     border-radius: 0.2rem;
     background-color: var(--badge-color);
-    /* position: relative; */
     color: var(--card-bg-color);
     font-size: 1.2rem;
+    transition: 0.2s ease;
 }
 
 .btn-primary:hover {
@@ -320,4 +320,45 @@ i:hover {
 
 .btn-chip:hover{
     cursor: pointer;
+}
+
+/* Dialogs */
+.dialog-container {
+    width: 70rem;
+    display: flex;
+    margin: 2rem auto;
+}
+
+.dialog {
+    margin: 3rem auto;
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--card-bg-color);
+}
+
+.dialog-action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.dialog-action-btn {
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.2rem;
+    color: var(--badge-color);
+    font-size: 1.2rem;
+    background: none;
+    transition: 0.2s ease;
+}
+
+.dialog-action-btn:hover {
+    cursor: pointer;
+    background-color: var(--card-btn-color);
 }
